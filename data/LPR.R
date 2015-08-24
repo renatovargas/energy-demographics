@@ -25,25 +25,25 @@ rm(list=ls())
 # reference.
 
 # output
-x <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/x.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+x <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/x.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # commodity use vector
-q <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/q.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+q <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/q.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Use matrix
-U <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/U.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+U <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/U.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Make matrix
-V <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/V.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+V <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/V.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Final demand X 15 years (corrected for urban/rural)
-corrsim_e <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/corrsim_e.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+corrsim_e <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/corrsim_e.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Final demand X 15 years (uncorrected for urban/rural)
-uncorrsim_e <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/uncorrsim_e.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+uncorrsim_e <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/uncorrsim_e.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Energy use coefficients ("M_p" in the paper)
-effi_ener <- as.matrix(read.csv("/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/effi_ener.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
+effi_ener <- as.matrix(read.csv("https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/effi_ener.csv", header=FALSE, dec=".", sep=",", comment.char="\""))
 
 # Since vectors are loaded as matrices, when creating "hat"
 # diagonal vectors we make a half-step to turn them to vectors.
@@ -77,5 +77,5 @@ Ep <- effi_ener %*% xt1
 Epb <- effi_ener %*% xt2
 
 # And export it to something Excel can read.
-write.csv(Ep, file = "/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/Ep.csv", fileEncoding = "macroman")
-write.csv(Ep, file = "/Users/renato/Documents/02Study/01_RM-RUG/LPR/data/Matrices/Epb.csv", fileEncoding = "macroman")
+write.csv(Ep, file = "https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/Ep.csv", fileEncoding = "macroman")
+write.csv(Ep, file = "https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/Epb.csv", fileEncoding = "macroman")
