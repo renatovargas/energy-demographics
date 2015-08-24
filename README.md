@@ -8,8 +8,9 @@ As populations in developing countries move from rural to urban areas, their con
 
 This repository contains:
 
-* [An R processing script for Environmentally Extended Input-Output analysis](https://github.com/renatovargas/energy-demographics/blob/master/code/LPR.R)
-* [Basic data and Output data](https://github.com/renatovargas/energy-demographics/tree/master/data) for this study, and
+* [An R processing script](https://github.com/renatovargas/energy-demographics/blob/master/code/LPR.R) with an Environmentally Extended Input-Output analysis model
+* [A workfile](https://github.com/renatovargas/energy-demographics/tree/master/workfiles) with all preparatory work from supply and use tables, to final demand calculations, to classifications and aggregations.
+* [Matrices and Vectors used and created by the model](https://github.com/renatovargas/energy-demographics/tree/master/data) for this study, and
 * [Documentation](https://github.com/renatovargas/energy-demographics/tree/master/docs) in Latex and other formats
 
 You can read the [final paper here](https://github.com/renatovargas/energy-demographics/blob/master/docs/01-Vargas-Demographic_Change_I-O.pdf).
