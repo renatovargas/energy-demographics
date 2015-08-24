@@ -6,4 +6,10 @@ As populations in developing countries move from rural to urban areas, their con
 
 ## About this repository
 
-This repository contains R processing scripts, basic data, and documentation in Latex in "code", "data" and "docs", respectively.
+This repository contains:
+
+* [An R processing script for Environmentally Extended Input-Output analysis](https://github.com/renatovargas/energy-demographics/tree/master/code)
+* [Basic data and Output data](https://github.com/renatovargas/energy-demographics/tree/master/data) for this study, and
+* [Documentation](https://github.com/renatovargas/energy-demographics/tree/master/docs) in Latex and other formats
+
+You can read the [final paper here](https://github.com/renatovargas/energy-demographics/blob/master/docs/01-Vargas-Demographic_Change_I-O.pdf).
