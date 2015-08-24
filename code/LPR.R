@@ -13,6 +13,9 @@
 # Clean the workspace
 rm(list=ls())
 
+# It is useful to know where you are
+wd <- getwd()
+
 # Load the matrices with the basic Supply and Use data.
 # Note that vectors are loaded as matrices since the csv
 # data already has the desired orientation and that eases
@@ -77,5 +80,6 @@ Ep <- effi_ener %*% xt1
 Epb <- effi_ener %*% xt2
 
 # And export it to something Excel can read.
-write.csv(Ep, file = "https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/Ep.csv", fileEncoding = "macroman")
-write.csv(Ep, file = "https://raw.githubusercontent.com/renatovargas/energy-demographics/master/data/Epb.csv", fileEncoding = "macroman")
+write.csv(Ep, file = "Ep.csv")
+write.csv(Ep, file = "Epb.csv")
+paste("Check out your files Ep.csv and Epb.csv at: ",wd, " Enjoy!", sep = "")
