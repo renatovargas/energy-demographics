@@ -13,6 +13,6 @@ This repository contains:
 * [An R processing script](https://github.com/renatovargas/energy-demographics/blob/master/code/LPR.R) with an Environmentally Extended Input-Output analysis model
 * [A workfile](https://github.com/renatovargas/energy-demographics/tree/master/workfiles) with preparatory work:  supply and use tables, energy final demand data, demographic data, final demand calculations, classifications, and aggregations.
 * [Matrices and Vectors used and created by the model](https://github.com/renatovargas/energy-demographics/tree/master/data) for this study, and
-* [Documentation](https://github.com/renatovargas/energy-demographics/tree/master/docs) in Latex and other formats
+* [Documentation](https://github.com/renatovargas/energy-demographics/tree/master/docs) in LaTeX and other formats
 
 
