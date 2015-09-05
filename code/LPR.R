@@ -81,5 +81,5 @@ Epb <- effi_ener %*% xt2
 
 # And export it to something Excel can read.
 write.csv(Ep, file = "Ep.csv")
-write.csv(Ep, file = "Epb.csv")
+write.csv(Epb, file = "Epb.csv")
 paste("Check out your files Ep.csv and Epb.csv at: ",wd, " Enjoy!", sep = "")
