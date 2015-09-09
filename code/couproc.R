@@ -7,7 +7,7 @@
 library(reshape)
 library(xlsx)
 
-setwd("/data/couproc/")
+# setwd("/data/couproc/")
 rm(list = ls())
 
 if(!file.exists("data")){dir.create("data")}
